@@ -8,56 +8,39 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-
 function chunk(array, size) {
-  const chunk = []
+  const chunk = [];
 
   for (let i = 0; i < array.length; i += size) {
-    let subArr = array.slice(i, i + size)
-    chunk.push(subArr)
+    chunk.push(array.slice(i, i + size));
   }
 
-  return chunk
+  return chunk;
 }
 
+// function chunk(array, size) {
+//   const chunk = [];
+//   for (let i = 0; i < array.length; i += size) {
+//     chunk.push(array.slice(i, i + size));
+//   }
 
+//   return chunk;
+// }
 
+// function chunk(array, size) {
+//   const chunk = []
 
+//   for (let i = 0; i < array.length; i += size) {
+//     let subArr = array.slice(i, i + size)
+//     chunk.push(subArr)
+//   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//   return chunk
+// }
 
 // function chunk(array, size) {
 //   let chunk = [];
-  
+
 //   for (let element of array) {
 //     let last = chunk[chunk.length - 1]
 
@@ -71,9 +54,6 @@ function chunk(array, size) {
 //   return chunk
 // }
 
-
-
-
 // function chunk(array, size) {
 //   let chunk = []
 
@@ -85,11 +65,6 @@ function chunk(array, size) {
 //   return chunk
 // }
 
-
-
-
-
-
 // function chunk(array, size) {
 //   let chunk = []
 //   let i = 0
@@ -99,14 +74,9 @@ function chunk(array, size) {
 //     chunk.push(subArr)
 //     i += size
 //   }
-  
+
 //   return chunk
 // }
-
-
-
-
-
 
 // function chunk(array, size) {
 //   let chunk = []
@@ -121,10 +91,6 @@ function chunk(array, size) {
 //   return chunk
 // }
 
-
-
-
-
 // function chunk(array, size) {
 //   let chunk = []
 //   let i = 0
@@ -137,18 +103,17 @@ function chunk(array, size) {
 
 //   return chunk
 // }
-
 
 // function chunk(array, size) {
 //   let chunk = [];
 //   let i = 0
-    
+
 //   while (i < array.length) {
 //       let subArr = array.slice(i, i + size)
 //       chunk.push(subArr)
 //       i += size
 //   }
-  
+
 //   return chunk
 // }
 
@@ -163,7 +128,6 @@ function chunk(array, size) {
 // }
 
 module.exports = chunk;
-
 
 // function chunk(array, size) {
 //   const chunk = []

@@ -7,6 +7,32 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
+function vowels(str) {
+  const vowels = ["a", "e", "i", "o", "u"];
+  let amount = 0;
+
+  for (let char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      amount += 1;
+    }
+  }
+
+  return amount;
+}
+
+// function vowels(str) {
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   let vowelCount = 0;
+
+//   for (let char of str.toLowerCase()) {
+//     if (vowels.includes(char)) {
+//       vowelCount += 1;
+//     }
+//   }
+
+//   return vowelCount;
+// }
+
 // function vowels(str) {
 //   // returns array or null if it cant find anything
 //   // the g means it doesnt stop at first match, i makes the search case insensitive, [] means search for anything inside them
@@ -15,41 +41,18 @@
 //   return matches ? matches.length : 0
 // }
 
-function vowels(str) {
-  let vowels = ['a', 'e', 'i', 'o', 'u']
-  let vowelAmount = 0
+// function vowels(str) {
+//   let vowels = ['a', 'e', 'i', 'o', 'u']
+//   let vowelAmount = 0
 
-  for (let char of str.toLowerCase()) {
-    if (vowels.includes(char)) {
-      vowelAmount++
-    }
-  }
+//   for (let char of str.toLowerCase()) {
+//     if (vowels.includes(char)) {
+//       vowelAmount++
+//     }
+//   }
 
-  return vowelAmount
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//   return vowelAmount
+// }
 
 // function vowels(str) {
 //   let vowelAmount = 0
@@ -63,25 +66,6 @@ function vowels(str) {
 
 //   return vowelAmount
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function vowels(str) {
 //   let vowelAmount = 0

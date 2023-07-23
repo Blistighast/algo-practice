@@ -7,9 +7,37 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
+function capitalize(str) {
+  const capStr = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (i === 0 || str[i - 1] === " ") {
+      capStr.push(str[i].toUpperCase());
+    } else {
+      capStr.push(str[i]);
+    }
+  }
+
+  return capStr.join("");
+}
+
+// function capitalize(str) {
+//   let capStr = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (i === 0 || str[i - 1] === " ") {
+//       capStr.push(str[i].toUpperCase());
+//     } else {
+//       capStr.push(str[i]);
+//     }
+//   }
+
+//   return capStr.join("");
+// }
+
 // function capitalize(str) {
 //   let capString = []
-  
+
 //   for (let i = 0; i < str.length; i++) {
 //     if (i === 0 || str[i - 1] === ' ') {
 //       capString.push(str[i].toUpperCase())
@@ -20,42 +48,9 @@
 //   return capString.join('')
 // }
 
-function capitalize(str) {
-  let capStr = []
-  
-  for (let i = 0; i < str.length; i++) {
-    if (i === 0 || str[i - 1] === ' ') {
-      capStr.push(str[i].toUpperCase())
-    } else {
-      capStr.push(str[i])
-    }
-  }
-
-  return capStr.join('')
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function capitalize(str) {
 //   let capStr = []
- 
+
 //   for (let i = 0; i < str.length; i++) {
 //     if (i === 0 || str[i - 1] === ' ') {
 //       capStr.push(str[i].toUpperCase())
@@ -67,20 +62,19 @@ function capitalize(str) {
 //   return capStr.join('')
 // }
 
+// function capitalize(str) {
+//   let capStr = []
 
+//   for (let i = 0; i < str.length; i++) {
+//     if (i === 0 || str[i - 1] === ' ') {
+//       capStr.push(str[i].toUpperCase())
+//     } else {
+//       capStr.push(str[i])
+//     }
+//   }
 
-
-
-
-
-
-
-
-
-
-
-
-
+//   return capStr.join('')
+// }
 
 // function capitalize(str) {
 //   let capStr = []
@@ -110,7 +104,6 @@ function capitalize(str) {
 
 module.exports = capitalize;
 
-
 // function capitalize(str) {
 //   let result = str[0].toUpperCase()
 
@@ -124,13 +117,12 @@ module.exports = capitalize;
 //   return result
 // }
 
-
 // function capitalize(str) {
 //   const words = [];
 
 //   for (let word of str.split(' ')) {
 //     words.push(word[0].toUpperCase() + word.slice(1));
 //   }
-  
+
 //   return words.join(' ');
 // }

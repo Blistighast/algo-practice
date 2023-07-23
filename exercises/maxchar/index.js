@@ -5,83 +5,69 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
-
 function maxChar(str) {
-  const map = {}
-  let maxChar = ""
-  let maxAmount = 0
+  const map = {};
+  let maxChar = "";
+  let amount = 0;
 
   for (let char of str) {
-    map[char] ? map[char] += 1 : map[char] = 1
+    map[char] ? (map[char] += 1) : (map[char] = 1);
   }
 
   for (let char in map) {
-    if (map[char] > maxAmount) {
-      maxAmount = map[char]
-      maxChar = char
+    if (map[char] > amount) {
+      maxChar = char;
+      amount = map[char];
     }
   }
 
-  return maxChar
+  return maxChar;
 }
 
+// function maxChar(str) {
+//   let maxChar = "";
+//   let maxAmount = 0;
+//   const map = {};
 
+//   for (let char of str) {
+//     map[char] ? (map[char] += 1) : (map[char] = 1);
+//   }
 
+//   for (let char in map) {
+//     if (map[char] > maxAmount) {
+//       maxAmount = map[char];
+//       maxChar = char;
+//     }
+//   }
 
+//   return maxChar;
+// }
 
+// function maxChar(str) {
+//   const map = {}
+//   let maxChar = ""
+//   let maxAmount = 0
 
+//   for (let char of str) {
+//     map[char] ? map[char] += 1 : map[char] = 1
+//   }
 
+//   for (let char in map) {
+//     if (map[char] > maxAmount) {
+//       maxAmount = map[char]
+//       maxChar = char
+//     }
+//   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//   return maxChar
+// }
 
 // function maxChar(str) {
 //   let charMap = {};
 //   let max = 0;
 //   let maxChar = ''
 //   for (let char of str) {
-//   charMap[char] ? charMap[char]++ : charMap[char] = 1 
+//   charMap[char] ? charMap[char]++ : charMap[char] = 1
 //   }
 //   for (let char in charMap) {
 //     if (charMap[char] > max) {
@@ -120,38 +106,15 @@ function maxChar(str) {
 //   for (let char of chars) {
 //     charsMap[char] ? charsMap[char]++ : charsMap[char] = 1
 //   }
-  
+
 //   for (let char in charsMap) {
 //       uniqueChar.push(char)
 //   }
-
 
 //   return uniqueChar
 // }
 
 // console.log(maxChar(chars))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function maxChar(chars) {
 //   let map = {}
@@ -171,24 +134,12 @@ function maxChar(str) {
 
 //   return maxChar
 // }
-  
-
-
-
-
-
-
-
-
-
-
-
 
 // function maxChar(chars) {
 //   let charMap = {}
 //   let max = 0;
 //   let maxChar = ''
-  
+
 //   for (let char of chars) {
 //     charMap[char] ? charMap[char]++ : charMap[char] = 1
 //   }
@@ -203,40 +154,10 @@ function maxChar(str) {
 //   return maxChar
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function maxChar(chars) {
 //   let charsMap = {}
 //   let maxChar = ''
 //   let max = 0
-
 
 //   for (let char of chars) {
 //     charsMap[char] ? charsMap[char]++ : charsMap[char] = 1
@@ -253,9 +174,6 @@ function maxChar(str) {
 // }
 
 // console.log(maxChar(chars))
-
-
-
 
 // function maxChar(str) {
 //   let charMap = {}
